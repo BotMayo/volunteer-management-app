@@ -955,7 +955,7 @@ export default function EventManagementPage() {
                         {event.zipcode && (
                           <span><strong>Zip:</strong> {event.zipcode}</span>
                         )}
-                        {event.volunteers_needed && (
+                        {event.volunteers_needed !== undefined && event.volunteers_needed !== null && (
                           <span><strong>Volunteers Needed:</strong> {event.volunteers_needed}</span>
                         )}
                       </div>
